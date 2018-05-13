@@ -1,0 +1,55 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Diyalog {
+
+	public static void main(String[] args) {
+	   Random r = new Random(3);
+	   System.out.println("Bir Şey Söyleyin. 1= Napıyorsun. 2= Nasılsın. 3= Merhaba.");
+       Scanner scan = new Scanner(System.in);
+       for (int i=0; i<100; i++) {
+       int sayi = scan.nextInt();
+       //Napıyorsun.
+       if (sayi==1) {
+    	   int a = r.nextInt(3);
+    	   if(a==0) {
+    		   System.out.println("Evde Televizyon İzleyip Çekirdek Çitliyom.");
+    	   }
+    	   if(a==1) {
+    		   System.out.println("Bungee Jumping Yapıyorum.");
+    	   }   
+    	   if(a==2) {
+    		   System.out.println("Sanane!");
+    	   }  
+	  }
+       //Nasılsın
+       if (sayi==2) {
+          int b = r.nextInt(4);
+          if(b==0) {
+        	  System.out.println("İyiyim.Sen Nasılsın");
+          }
+          if(b==1) {
+        	  System.out.println("İyiyim.");
+          }
+          if(b==2) {
+        	  System.out.println("Kötüyüm.");
+          }
+          if(b==3) {
+        	  System.out.println("Sanane!");
+          }
+       }
+       if (sayi==3) {
+    	   int c = r.nextInt(3);
+    	   if(c==0) {
+    		   System.out.println("Merhaba!");
+    	   }
+    	   if(c==1) {
+    		   System.out.println("Merhaba! Nasılsın?");
+    	   }
+    	   if(c==2) {
+    		   System.out.println("Merhaba! Naber?");
+    	   }
+       }
+	}
+}
+}
